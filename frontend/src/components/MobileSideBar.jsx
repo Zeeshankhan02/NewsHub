@@ -26,7 +26,7 @@ function MobileSideBar({categories,setIsMenuOpen,isMenuOpen}){
                   </NavLink>
                 ))}
                  <button  onClick={handleLogout}
-              className="bg-sky-700 rounded p-2 hover:text-white hover:bg-sky-600"
+              className="bg-sky-700 rounded p-2 cursor-pointer hover:text-white hover:bg-sky-600"
             >
               LogOut
             </button>

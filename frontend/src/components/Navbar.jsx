@@ -80,7 +80,7 @@ function Navbar() {
                 onClick={()=>{
                   navigate('/signup')
                 }}
-                className="bg-blue-900 text-center text-white rounded p-2 w-25 hover:bg-sky-600"
+                className="bg-blue-900 text-center text-white rounded p-2 w-25 cursor-pointer hover:bg-sky-600"
               >
                 SignUp
               </button>)}
