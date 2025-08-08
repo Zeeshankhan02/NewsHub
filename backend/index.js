@@ -10,7 +10,9 @@ const allowedOrigin = process.env.FRONTEND_URL
 dbConnect()
 app.use(express.json())
 app.use(cors({
-  origin:allowedOrigin
+  origin:allowedOrigin,
+  methods: ["POST", "GET"],
+  credentials:true
 }));
 
 
