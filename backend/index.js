@@ -17,7 +17,7 @@ app.use(cors({
 app.use('/user',userRouter)
 app.use('/api',apiRouter)
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
   console.log("Running...");
   
 })
