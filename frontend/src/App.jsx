@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="" element={<BeforeSign />}>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={token?  <Navigate to="/news" replace /> : <Home />}/>
             <Route path="/signup" element={token?  <Navigate to="/news" replace /> : <SignUp />} />
             <Route path="/signin" element={token?  <Navigate to="/news" replace /> : <SignIn />} />
           </Route>
